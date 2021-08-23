@@ -1,22 +1,15 @@
 import React from "react";
-import Header from "./components/Header.js";
-import Store from "./pages/Store.js";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
- import "slick-carousel/slick/slick-theme.css";
+import { Route, Switch, BrowserRouter as Router, Redirect } from "react-router-dom";
+import Shop from "./pages/Shop";
 import "./App.css";
+import "./pages/assets/css/style.css";
 
 export default function App() {
   return (
     <Router>
-      <>
-        <Header />
-        <Switch>
-          <Route path="/">
-            <Store />
-          </Route>
-        </Switch>
-      </>
+      <Switch>
+        <Route path="/" exact component={Shop} />
+      </Switch>
     </Router>
   );
 }
