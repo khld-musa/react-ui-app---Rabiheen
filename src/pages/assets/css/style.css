@@ -1590,12 +1590,13 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f1f7fd;
+  background: #036b43;
+  height: 10rem;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #036b43;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 
